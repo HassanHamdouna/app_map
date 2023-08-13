@@ -1,3 +1,4 @@
+import 'package:app_map/screen/launch_screen.dart';
 import 'package:app_map/screen/map_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/map_screen',
       routes: {
+        '/launch_screen': (context) => const LaunchScreen(),
         '/map_screen': (context) => const MapScreen(),
       },
     );
